@@ -1,0 +1,2 @@
+[03-Sep-2017 12:19:02 America/New_York] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/sayaitoe/public_html/bizbart/stuff/home/logout.php on line 2
+[03-Sep-2017 12:19:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sayaitoe/public_html/bizbart/stuff/home/logout.php:2) in /home/sayaitoe/public_html/bizbart/stuff/home/logout.php on line 3
