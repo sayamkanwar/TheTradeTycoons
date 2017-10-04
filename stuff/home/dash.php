@@ -171,7 +171,7 @@ $itemno++;
 </table>
 <br>
 <h2 class="sub-heading">Trade Logs</h2>
-<table border="1" cellpadding="10" cellspacing="0">
+<table border="1" cellpadding="10" cellspacing="0" id="tradelogs">
 <tr>
 <th>S. No.</th>
 <th>Offer Created By</th>
@@ -229,6 +229,11 @@ $itemno++;
 //   lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
 //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
 // })();
+</script>
+<script type="text/javascript">
+  setInterval(function(){
+    $('#tradelogs').load('./dash_ajax.php')
+  }, 2000)
 </script>
 <!-- End of LiveChat code -->
 <input type='hidden' id='sessionvar' value="<?php echo $_SESSION['username']; ?>">
